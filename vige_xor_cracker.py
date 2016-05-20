@@ -90,7 +90,7 @@ def decrypt(a, samplesize, final):
 		sample += chr(ord(idata[i]) ^ ord(buf[i%keylen]))
 	
 	if final:
-		print "%5d\tkey: %r sample: \n\n%s" %(a, buf, sample)
+		args.o.write("%5d\tkey: %r sample: \n\n%s" %(a, buf, sample))
 	else:
 		print "%5d\tkey: %r sample: %r" %(a, buf, sample)	
 
