@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 
-	idata = args.i.read().decode('hex')
+	idata = args.i.read()#.decode('hex')
 	cdata = args.clear_infile.read()
 		
 	if args.l:
